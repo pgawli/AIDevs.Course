@@ -27,8 +27,8 @@ var app = builder.Build();
 await app.StartAsync();
 try
 {
-  var task1 = app.Services.GetRequiredService<LoginTask>();
-  await task1.Execute();
+  var lesson = app.Services.GetRequiredService<LoginTask>();
+  await lesson.Execute();
 }
 finally
 {

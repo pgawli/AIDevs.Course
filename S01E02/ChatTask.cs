@@ -30,7 +30,7 @@ public class ChatTask
     var ready = new VerificationRequest("READY", 0);
     Console.WriteLine($"User: {ready}");
     var response = await chatApi.Verify(ready);
-    Console.WriteLine("Verify: {response}");
+    Console.WriteLine($"Verify: {response}");
     
     while (true)
     {
@@ -46,6 +46,8 @@ public class ChatTask
       var request = new VerificationRequest(aiResponse.Content[0].Text, msgId);
       response = await chatApi.Verify(request);
       Console.WriteLine($"Verify {response.Text}");
+      if (response.Text.Contains("FLG:"))
+        break;
     }
   }
 }
