@@ -8,6 +8,45 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S01E02", "S01E02\S01E02.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S01E03", "S01E03\S01E03.csproj", "{564794C1-A86B-4853-8D2E-7A74B2EBC920}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azyl", "Azyl\Azyl.csproj", "{46987F54-0129-4E5B-A2C4-D51F471CA79C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{82FBDB21-93DD-4BC0-9D67-9A5582CC2D5B}"
+	ProjectSection(SolutionItems) = preProject
+		docs\pliki_z_fabryki\weapons_tests.zip = docs\pliki_z_fabryki\weapons_tests.zip
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pliki_z_fabryki", "pliki_z_fabryki", "{6ACB14F7-18DE-4ECA-9CF2-A1D804DDB811}"
+	ProjectSection(SolutionItems) = preProject
+		docs\pliki_z_fabryki\2024-11-12_report-00-sektor_C4.txt = docs\pliki_z_fabryki\2024-11-12_report-00-sektor_C4.txt
+		docs\pliki_z_fabryki\2024-11-12_report-01-sektor_A1.txt = docs\pliki_z_fabryki\2024-11-12_report-01-sektor_A1.txt
+		docs\pliki_z_fabryki\2024-11-12_report-02-sektor_A3.txt = docs\pliki_z_fabryki\2024-11-12_report-02-sektor_A3.txt
+		docs\pliki_z_fabryki\2024-11-12_report-03-sektor_A3.txt = docs\pliki_z_fabryki\2024-11-12_report-03-sektor_A3.txt
+		docs\pliki_z_fabryki\2024-11-12_report-04-sektor_B2.txt = docs\pliki_z_fabryki\2024-11-12_report-04-sektor_B2.txt
+		docs\pliki_z_fabryki\2024-11-12_report-05-sektor_C1.txt = docs\pliki_z_fabryki\2024-11-12_report-05-sektor_C1.txt
+		docs\pliki_z_fabryki\2024-11-12_report-06-sektor_C2.txt = docs\pliki_z_fabryki\2024-11-12_report-06-sektor_C2.txt
+		docs\pliki_z_fabryki\2024-11-12_report-07-sektor_C4.txt = docs\pliki_z_fabryki\2024-11-12_report-07-sektor_C4.txt
+		docs\pliki_z_fabryki\2024-11-12_report-08-sektor_A1.txt = docs\pliki_z_fabryki\2024-11-12_report-08-sektor_A1.txt
+		docs\pliki_z_fabryki\2024-11-12_report-09-sektor_C2.txt = docs\pliki_z_fabryki\2024-11-12_report-09-sektor_C2.txt
+		docs\pliki_z_fabryki\2024-11-12_report-10-sektor-C1.mp3 = docs\pliki_z_fabryki\2024-11-12_report-10-sektor-C1.mp3
+		docs\pliki_z_fabryki\2024-11-12_report-11-sektor-C2.mp3 = docs\pliki_z_fabryki\2024-11-12_report-11-sektor-C2.mp3
+		docs\pliki_z_fabryki\2024-11-12_report-12-sektor_A1.mp3 = docs\pliki_z_fabryki\2024-11-12_report-12-sektor_A1.mp3
+		docs\pliki_z_fabryki\2024-11-12_report-13.png = docs\pliki_z_fabryki\2024-11-12_report-13.png
+		docs\pliki_z_fabryki\2024-11-12_report-14.png = docs\pliki_z_fabryki\2024-11-12_report-14.png
+		docs\pliki_z_fabryki\2024-11-12_report-15.png = docs\pliki_z_fabryki\2024-11-12_report-15.png
+		docs\pliki_z_fabryki\2024-11-12_report-16.png = docs\pliki_z_fabryki\2024-11-12_report-16.png
+		docs\pliki_z_fabryki\2024-11-12_report-17.png = docs\pliki_z_fabryki\2024-11-12_report-17.png
+		docs\pliki_z_fabryki\2024-11-12_report-99 = docs\pliki_z_fabryki\2024-11-12_report-99
+		docs\pliki_z_fabryki\facts\f01.txt = docs\pliki_z_fabryki\facts\f01.txt
+		docs\pliki_z_fabryki\facts\f02.txt = docs\pliki_z_fabryki\facts\f02.txt
+		docs\pliki_z_fabryki\facts\f03.txt = docs\pliki_z_fabryki\facts\f03.txt
+		docs\pliki_z_fabryki\facts\f04.txt = docs\pliki_z_fabryki\facts\f04.txt
+		docs\pliki_z_fabryki\facts\f05.txt = docs\pliki_z_fabryki\facts\f05.txt
+		docs\pliki_z_fabryki\facts\f06.txt = docs\pliki_z_fabryki\facts\f06.txt
+		docs\pliki_z_fabryki\facts\f07.txt = docs\pliki_z_fabryki\facts\f07.txt
+		docs\pliki_z_fabryki\facts\f08.txt = docs\pliki_z_fabryki\facts\f08.txt
+		docs\pliki_z_fabryki\facts\f09.txt = docs\pliki_z_fabryki\facts\f09.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,5 +69,12 @@ Global
 		{564794C1-A86B-4853-8D2E-7A74B2EBC920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564794C1-A86B-4853-8D2E-7A74B2EBC920}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{564794C1-A86B-4853-8D2E-7A74B2EBC920}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6ACB14F7-18DE-4ECA-9CF2-A1D804DDB811} = {82FBDB21-93DD-4BC0-9D67-9A5582CC2D5B}
 	EndGlobalSection
 EndGlobal
