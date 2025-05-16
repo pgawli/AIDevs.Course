@@ -30,24 +30,22 @@ public class Lesson5Task
     var originalText = cenzura.Content;
     Console.WriteLine($"Cenzura.txt: {originalText}");
     
+    var prompt = $"To jest tekst: '{originalText}' który należy ocenzurować. Zamień wszystkie dane dotyczące imienia, nazwiska, adresu oraz wieku na słowo CENZURA.";
+    
     var context = new List<ChatMessage>
     {
       ChatMessage.CreateSystemMessage("Imię i nazwisko muszą być zastąpione jednym słowem CENZURA" ),
       ChatMessage.CreateSystemMessage("W adresie zastęp tylko nazwy miast i ulic ale zachowaj określenia miejsc takie jak 'ulica' i podobne" ),
+      ChatMessage.CreateSystemMessage(prompt)
     };
-
-    var prompt = $"To jest tekst: '{originalText}' który należy ocenzurować. Zamień wszystkie dane dotyczące imienia, nazwiska, adresu oraz wieku na słowo CENZURA.";
-
-    context.Add(ChatMessage.CreateSystemMessage(prompt));
     
     var chatResponse = await client.CompleteChatAsync(context);
     if (chatResponse == null)
     {
       throw new Exception("The chat response could not be retrieved.");
     }
-    Console.WriteLine(chatResponse.Value.Content[0].Text);
-    
-    var answer = chatResponse.Value.Content[0].Text;
+    var answer = chatResponse.Value.Content[0].Text!;
+    Console.WriteLine(answer);
     
     var request = new AnswerRequest("CENZURA", apiKey, answer);
     var response = await lesson5Api.PostCenzura(request);
