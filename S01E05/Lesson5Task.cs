@@ -8,14 +8,12 @@ namespace S01E05;
 public class Lesson5Task
 {
   private readonly ILesson5Api lesson5Api;
-  private readonly IConfiguration configuration;
   private readonly ChatClient client;
   private readonly string apiKey;  
 
   public Lesson5Task(ILesson5Api lesson5Api, IConfiguration configuration)
   {
     this.lesson5Api = lesson5Api;
-    this.configuration = configuration;
     client = new ChatClient(model: "gpt-4.1-nano", apiKey: configuration["OpenAI:Token"]!);
     apiKey = configuration["ApiKey"]!;
   }
