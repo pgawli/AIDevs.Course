@@ -11,9 +11,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Azyl", "Azyl\Azyl.csproj", "{46987F54-0129-4E5B-A2C4-D51F471CA79C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Items", "Items", "{82FBDB21-93DD-4BC0-9D67-9A5582CC2D5B}"
-	ProjectSection(SolutionItems) = preProject
-		docs\pliki_z_fabryki\weapons_tests.zip = docs\pliki_z_fabryki\weapons_tests.zip
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pliki_z_fabryki", "pliki_z_fabryki", "{6ACB14F7-18DE-4ECA-9CF2-A1D804DDB811}"
 	ProjectSection(SolutionItems) = preProject
@@ -47,6 +44,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pliki_z_fabryki", "pliki_z_
 		docs\pliki_z_fabryki\facts\f09.txt = docs\pliki_z_fabryki\facts\f09.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S01E05", "S01E05\S01E05.csproj", "{C9BD0377-B1FA-4DAF-9B19-D4881D162478}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,6 +72,10 @@ Global
 		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46987F54-0129-4E5B-A2C4-D51F471CA79C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9BD0377-B1FA-4DAF-9B19-D4881D162478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9BD0377-B1FA-4DAF-9B19-D4881D162478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9BD0377-B1FA-4DAF-9B19-D4881D162478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9BD0377-B1FA-4DAF-9B19-D4881D162478}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6ACB14F7-18DE-4ECA-9CF2-A1D804DDB811} = {82FBDB21-93DD-4BC0-9D67-9A5582CC2D5B}
