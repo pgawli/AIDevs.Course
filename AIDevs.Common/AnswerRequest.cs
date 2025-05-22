@@ -10,3 +10,11 @@ public record AnswerRequest(
 public record ResponseRequest(
   [property: JsonPropertyName("code")] int Code, 
   [property: JsonPropertyName("message")] string Message);  
+  
+public record Answer9Request(
+  [property: JsonPropertyName("task")] string Task, 
+  [property: JsonPropertyName("apikey")] string ApiKey, 
+  [property: JsonPropertyName("answer")] Answer9Content Answer);
+
+public sealed record Answer9Content(
+  [property: JsonPropertyName("people")] string[] Peoples, [property: JsonPropertyName("hardware")] string[] Hardware);  

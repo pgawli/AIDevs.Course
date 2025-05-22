@@ -34,7 +34,6 @@ public class Lesson7Task : Lesson
     foreach (var file in pictures)
     {
       var imageBytes = await File.ReadAllBytesAsync(file);
-      var base64Image = Convert.ToBase64String(imageBytes);
       var d = new BinaryData(imageBytes);
       var imagePart = ChatMessageContentPart.CreateImagePart(d, "image/png", ChatImageDetailLevel.Low);;
       

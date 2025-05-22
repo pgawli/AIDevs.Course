@@ -1,0 +1,103 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net9.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>S02E04</RootNamespace>
+        <UserSecretsId>b2509367-e9c4-47df-a165-647ba909af72</UserSecretsId>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\AIDevs.Common\AIDevs.Common.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.4" />
+        <PackageReference Include="Microsoft.Extensions.Http" Version="9.0.4" />
+        <PackageReference Include="OpenAI" Version="2.1.0" />
+        <PackageReference Include="Refit" Version="8.0.0" />
+        <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="dane\2024-11-12_report-00-sektor_C4.txt" />
+      <Content Include="dane\2024-11-12_report-00-sektor_C4.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-01-sektor_A1.txt" />
+      <Content Include="dane\2024-11-12_report-01-sektor_A1.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-02-sektor_A3.txt" />
+      <Content Include="dane\2024-11-12_report-02-sektor_A3.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-03-sektor_A3.txt" />
+      <Content Include="dane\2024-11-12_report-03-sektor_A3.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-04-sektor_B2.txt" />
+      <Content Include="dane\2024-11-12_report-04-sektor_B2.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-05-sektor_C1.txt" />
+      <Content Include="dane\2024-11-12_report-05-sektor_C1.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-06-sektor_C2.txt" />
+      <Content Include="dane\2024-11-12_report-06-sektor_C2.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-07-sektor_C4.txt" />
+      <Content Include="dane\2024-11-12_report-07-sektor_C4.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-08-sektor_A1.txt" />
+      <Content Include="dane\2024-11-12_report-08-sektor_A1.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-09-sektor_C2.txt" />
+      <Content Include="dane\2024-11-12_report-09-sektor_C2.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-10-sektor-C1.mp3" />
+      <Content Include="dane\2024-11-12_report-10-sektor-C1.mp3">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-11-sektor-C2.mp3" />
+      <Content Include="dane\2024-11-12_report-11-sektor-C2.mp3">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-12-sektor_A1.mp3" />
+      <Content Include="dane\2024-11-12_report-12-sektor_A1.mp3">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-13.png" />
+      <Content Include="dane\2024-11-12_report-13.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-14.png" />
+      <Content Include="dane\2024-11-12_report-14.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-15.png" />
+      <Content Include="dane\2024-11-12_report-15.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-16.png" />
+      <Content Include="dane\2024-11-12_report-16.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-17.png" />
+      <Content Include="dane\2024-11-12_report-17.png">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+      <None Remove="dane\2024-11-12_report-99" />
+      <Content Include="dane\2024-11-12_report-99">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </Content>
+    </ItemGroup>
+
+</Project>
