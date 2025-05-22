@@ -52,6 +52,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIDevs.Common", "AIDevs.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S02E02", "S02E02\S02E02.csproj", "{308D2CE7-05B3-4CE7-A810-AB25A0AEC3D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "S02E03", "S02E03\S02E03.csproj", "{C4135C93-5229-4002-863B-A79A02A33C8B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -94,6 +96,10 @@ Global
 		{308D2CE7-05B3-4CE7-A810-AB25A0AEC3D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{308D2CE7-05B3-4CE7-A810-AB25A0AEC3D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{308D2CE7-05B3-4CE7-A810-AB25A0AEC3D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4135C93-5229-4002-863B-A79A02A33C8B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4135C93-5229-4002-863B-A79A02A33C8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4135C93-5229-4002-863B-A79A02A33C8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4135C93-5229-4002-863B-A79A02A33C8B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{6ACB14F7-18DE-4ECA-9CF2-A1D804DDB811} = {82FBDB21-93DD-4BC0-9D67-9A5582CC2D5B}

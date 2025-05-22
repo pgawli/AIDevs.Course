@@ -4,7 +4,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using Refit;
-using S02E02;
+using S02E03;
 
 var builder = new HostBuilder()
   .ConfigureAppConfiguration((hostingContext, config) =>
@@ -31,14 +31,14 @@ var builder = new HostBuilder()
       {
         client.BaseAddress = new Uri(apiUrl);
       });
-    services.AddTransient<Lesson7Task>();
+    services.AddTransient<Lesson8Task>();
   });
 
 var app = builder.Build();
 await app.StartAsync();
 try
 {
-  var lesson = app.Services.GetRequiredService<Lesson7Task>();
+  var lesson = app.Services.GetRequiredService<Lesson8Task>();
   await lesson.Execute();
 }
 finally
