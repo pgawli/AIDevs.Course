@@ -17,4 +17,10 @@ public record Answer9Request(
   [property: JsonPropertyName("answer")] Answer9Content Answer);
 
 public sealed record Answer9Content(
-  [property: JsonPropertyName("people")] string[] Peoples, [property: JsonPropertyName("hardware")] string[] Hardware);  
+  [property: JsonPropertyName("people")] string[] Peoples, [property: JsonPropertyName("hardware")] string[] Hardware);
+
+public sealed record AnswerArxiv(
+  [property: JsonPropertyName("task")] string Task, 
+  [property: JsonPropertyName("apikey")] string ApiKey, 
+  [property: JsonPropertyName("answer")] Dictionary<string, string> Answer
+);  
