@@ -15,6 +15,9 @@ public interface ICentralaApi
   [Post("/report")]
   Task<ApiResponse<ResponseRequest>> ReportArxiv([Body(BodySerializationMethod.Serialized)] AnswerArxiv request);
   
+  [Post("/report")]
+  Task<ApiResponse<ResponseRequest>> ReportDocs([Body(BodySerializationMethod.Serialized)] AnswerDocuments request);
+  
   [Get("/data/{apiKey}/robotid.json")]
   Task<ApiResponse<RobotDescription>> GetRobot(string apiKey);
   

@@ -11,9 +11,9 @@ public class Lesson10Task : Lesson
   
   public Lesson10Task(ICentralaApi api, IConfiguration configuration) : base(api, configuration)
   {
-    audioTranscript = new AudioTranscript(openAiToken);
+    audioTranscript = new AudioTranscript(OpenAiToken);
     linkDownloader = new LinkDownloader(workspaceFolder);
-    textOrImageDescription = new TextOrImageDescription(openAiToken);
+    textOrImageDescription = new TextOrImageDescription(OpenAiToken);
   }
 
   public override async ValueTask Execute()
@@ -164,7 +164,7 @@ public class Lesson10Task : Lesson
     {
       Console.WriteLine($"File {file} does not exist. Downloading ...");
 
-      var response = await api.GetArxivDraft();
+      var response = await Api.GetArxivDraft();
       if (!response.IsSuccessStatusCode)
       {
         Console.WriteLine($"Failed to download file: {response.StatusCode}");
@@ -188,7 +188,7 @@ public class Lesson10Task : Lesson
   {
     Console.WriteLine("Downloading questions...");
     var result = new Dictionary<string, string>();  
-    var response = await api.GetArxiv(apiKey);
+    var response = await Api.GetArxiv(ApiKey);
     if (!response.IsSuccessful)
     {
       Console.WriteLine($"{response.StatusCode} {response.ReasonPhrase} - {response.Content}");

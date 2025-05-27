@@ -17,8 +17,8 @@ public class Lesson8Task : Lesson
     var prompt = CreatePrompt(robotDescription);
     var robotUri = await GenerateImage(prompt);
     
-    var answer = new AnswerRequest("robotid", apiKey, robotUri.AbsoluteUri);
-    var response = await api.Report(answer);
+    var answer = new AnswerRequest("robotid", ApiKey, robotUri.AbsoluteUri);
+    var response = await Api.Report(answer);
 
     if (!response.IsSuccessful)
     {
@@ -53,7 +53,7 @@ public class Lesson8Task : Lesson
   private async Task<Uri> GenerateImage(string robotDescription)
   {
     Console.WriteLine("Generating image...");
-    ImageClient client = new("dall-e-3", openAiToken);
+    ImageClient client = new("dall-e-3", OpenAiToken);
     ImageGenerationOptions options = new()
     {
       Quality = GeneratedImageQuality.Standard,
@@ -74,7 +74,7 @@ public class Lesson8Task : Lesson
 
   private async Task<string> DownloadRobotDescription()
   {
-    var response = await api.GetRobot(apiKey);
+    var response = await Api.GetRobot(ApiKey);
     if (!response.IsSuccessful)
     {
       Console.WriteLine($"{response.StatusCode} {response.ReasonPhrase} - {response.Content}");

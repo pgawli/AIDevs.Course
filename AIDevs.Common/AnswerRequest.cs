@@ -23,4 +23,10 @@ public sealed record AnswerArxiv(
   [property: JsonPropertyName("task")] string Task, 
   [property: JsonPropertyName("apikey")] string ApiKey, 
   [property: JsonPropertyName("answer")] Dictionary<string, string> Answer
-);  
+);
+
+public sealed record AnswerDocuments(
+  [property: JsonPropertyName("task")] string Task, 
+  [property: JsonPropertyName("apikey")] string ApiKey, 
+  [property: JsonPropertyName("answer")] Dictionary<string, string> Answer
+);    

@@ -11,7 +11,7 @@ public class Lesson7Task : Lesson
 
   public Lesson7Task(ICentralaApi api, IConfiguration configuration) : base(api, configuration)
   {
-    chatClient = new ChatClient(model: "gpt-4o", apiKey: openAiToken);
+    chatClient = new ChatClient(model: "gpt-4o", apiKey: OpenAiToken);
   }
 
   public override async ValueTask Execute()

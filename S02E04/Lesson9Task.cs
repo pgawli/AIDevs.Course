@@ -30,12 +30,12 @@ public class Lesson9Task : Lesson
     peoples.AddRange(imageResults.people);
     hardware.AddRange(imageResults.hardware);
     
-    var request = new Answer9Request("kategorie", apiKey, new Answer9Content(peoples.ToArray(), hardware.ToArray()));
+    var request = new Answer9Request("kategorie", ApiKey, new Answer9Content(peoples.ToArray(), hardware.ToArray()));
     
     var json = JsonSerializer.Serialize(request);
     await File.WriteAllTextAsync($".\\dane\\{Guid.NewGuid()}.json", json);
     
-    var response = await api.Report9(request);
+    var response = await Api.Report9(request);
     if (!response.IsSuccessful)
     {
       Console.WriteLine($"{response.StatusCode} {response.ReasonPhrase} - {response.Content}");
@@ -49,7 +49,7 @@ public class Lesson9Task : Lesson
     var people = new List<string>();
     var hardware = new List<string>();
     
-    var chatClient = new ChatClient(model: "gpt-4o", apiKey: openAiToken);
+    var chatClient = new ChatClient(model: "gpt-4o", apiKey: OpenAiToken);
     
     foreach (var image in images)
     {
@@ -79,7 +79,7 @@ public class Lesson9Task : Lesson
     var people = new List<string>();
     var hardware = new List<string>();
     
-    var chatClient = new ChatClient("gpt-4o", openAiToken);    
+    var chatClient = new ChatClient("gpt-4o", OpenAiToken);    
     foreach (var text in texts)
     {
       Console.WriteLine($"Input: {text}");
@@ -127,7 +127,7 @@ public class Lesson9Task : Lesson
     var people = new List<string>();
     var hardware = new List<string>();
     
-    var audioClient = new AudioClient(model: "whisper-1", openAiToken);
+    var audioClient = new AudioClient(model: "whisper-1", OpenAiToken);
     
     foreach (var audio in audios)
     {
