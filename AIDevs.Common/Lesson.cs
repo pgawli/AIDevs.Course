@@ -1,4 +1,5 @@
 using Microsoft.Extensions.Configuration;
+using OpenAI.Chat;
 using Qdrant.Client;
 
 namespace AIDevs.Common;
@@ -35,5 +36,13 @@ public abstract class Lesson
       throw new InvalidOperationException("Qdrant ApiKey is not configured.");
 
     return new QdrantClient("localhost"); //QdrantUrl, QdrantPort, false, QdrantApiKey);
+  }
+  
+  protected ChatClient CreateChatClient(string model = "gpt-4o")
+  {
+    if (string.IsNullOrEmpty(OpenAiToken))
+      throw new InvalidOperationException("OpenAI is not configured.");
+
+    return new ChatClient(model, apiKey: OpenAiToken);
   }
 }

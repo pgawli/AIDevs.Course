@@ -26,6 +26,12 @@ public interface ICentralaApi
   
   [Get("/data/{apiKey}/arxiv.txt")]
   Task<ApiResponse<string>> GetArxiv(string apiKey);
+  
+  [Post("/apidb")]
+  Task<ApiResponse<string>> PostQuery([Body(BodySerializationMethod.Serialized)] Query apiKey);
+  
+  [Post("/report")]
+  Task<ApiResponse<string>> PostAnswer([Body(BodySerializationMethod.Serialized)] ListAnswerRequest request);
 }
 
 public sealed record RobotDescription([property: JsonPropertyName("description")] string RobotId);
