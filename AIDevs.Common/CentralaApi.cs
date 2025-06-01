@@ -6,6 +6,9 @@ namespace AIDevs.Common;
 [Headers("User-Agent: RefitClient")]
 public interface ICentralaApi
 {
+  [Get("/dane/barbara.txt")]
+  Task<ApiResponse<string>> GetBarbaraNote();
+
   [Post("/report")]
   Task<ApiResponse<ResponseRequest>> Report([Body(BodySerializationMethod.Serialized)] AnswerRequest request);
   
@@ -32,7 +35,15 @@ public interface ICentralaApi
   
   [Post("/report")]
   Task<ApiResponse<string>> PostAnswer([Body(BodySerializationMethod.Serialized)] ListAnswerRequest request);
+  
+  [Post("/people")] 
+  Task<ApiResponse<ResponseRequest>> PostPeople([Body(BodySerializationMethod.Serialized)] SimpleQuery request);
+  
+  [Post("/places")] 
+  Task<ApiResponse<ResponseRequest>> PostPlaces([Body(BodySerializationMethod.Serialized)] SimpleQuery request);
+
 }
 
+public sealed record SimpleQuery([property: JsonPropertyName("apikey")] string ApiKey, [property: JsonPropertyName("query")] string QueryText);
 public sealed record RobotDescription([property: JsonPropertyName("description")] string RobotId);
 
